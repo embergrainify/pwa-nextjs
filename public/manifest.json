@@ -5,8 +5,8 @@
   "background_color": "#004740",
   "display": "fullscreen",
   "orientation": "landscape-primary",
-  "scope": "https://embergrainify.github.io/pwa-nextjs/",
-  "start_url": "https://embergrainify.github.io/pwa-nextjs/",
+  "scope": "./",
+  "start_url": "./",
   "icons": [
     {
       "src": "icons/icon-72x72.png",
