@@ -5,8 +5,8 @@
   "background_color": "#004740",
   "display": "fullscreen",
   "orientation": "landscape-primary",
-  "scope": "./",
-  "start_url": "./",
+  "scope": "/pwa-nextjs/",
+  "start_url": "/pwa-nextjs/",
   "icons": [
     {
       "src": "icons/icon-72x72.png",
