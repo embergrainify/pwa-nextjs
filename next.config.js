@@ -188,7 +188,8 @@ const withPWA = require('next-pwa')({
   runtimeCaching: cacheConfig
 })
 
-const basePath = process.env.NODE_ENV === 'production' ? '/pwa-nextjs' : '';
+// const basePath = process.env.NODE_ENV === 'production' ? '/pwa-nextjs' : '';
+const basePath = '/pwa-nextjs';
 
 module.exports = withPWA({
   reactStrictMode: true,
