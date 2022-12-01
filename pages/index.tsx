@@ -44,14 +44,47 @@ const showFilePickerChrome = async (e: React.MouseEvent<HTMLElement>) => {
     const file = await handle.getFile();
     const content = await file.text();
     console.log(`content ${content}`);
-  } catch(err) {
+  } catch (err) {
     console.log(`Error: ${err}`);
   }
+}
+
+const test1 = () => {
+  console.log('test1');
+  const container = document.getElementById('container');
+  const img = document.createElement('img');
+  img.src = `${process.env.basePath}/vercel.svg`;
+  container?.appendChild(img);
+}
+
+const test2 = () => {
+  console.log('test2');
+  const container = document.getElementById('container');
+  const img = document.createElement('img');
+  img.src = `${process.env.basePath}/pic01.png`;
+  container?.appendChild(img);
 }
 
 export default function Home() {
   return (
     <div>
+
+      <div id="container" className="flex flex-col justify-center items-center gap-4">
+        <h1 className="text-3xl font-bold">
+          Progressive Web App - Vanilla - Next.JS
+        </h1>
+        <button className="rounded-lg px-8 py-2 bg-red-600 text-gray-100" onClick={test1}>Test1</button>
+        <button className="rounded-lg px-8 py-2 bg-green-600 text-gray-100" onClick={test2}>Test2</button>
+        <img src={`${process.env.basePath}/vercel.svg`} />
+        <div className='w-64 h-64 bg-slate-400'>
+          <img src={`${process.env.basePath}/pic01.png`} />
+        </div>
+      </div>
+
+
+
+
+
       <main className="flex flex-col items-center justify-center">
         <div className="w-full flex flex-col space-y-4 px-16 py-8 items-start">
           <p className="text-3xl font-bold text-gray-700">*</p>
